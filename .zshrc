@@ -106,6 +106,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
+alias ls="exa --long"
+alias emails="grep -hIroE '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b'"
+alias ipsearch="grep -hIroE '([0-9]{1,3}[\.]){3}[0-9]{1,3}'"
+alias phones="grep -hIroE '\d{3}-\d{3}-\d{4}'"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
